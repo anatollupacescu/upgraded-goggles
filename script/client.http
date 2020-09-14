@@ -1,0 +1,13 @@
+@host = http://localhost:8080
+
+### usd
+GET {{host}}/USD
+Accept: application/json
+
+### eur
+GET {{host}}/GBP
+Accept: application/json
+
+### external
+GET https://api.exchangeratesapi.io/latest?base=EUR
+Accept: application/json
